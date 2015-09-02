@@ -3,7 +3,8 @@
 <head>
         <meta charset="utf-8" />
         <title>A simple journal</title>
-        <link rel="stylesheet" href="http://gravenimage.github.io/theme/css/main.css" />
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A simple journal Atom Feed" />
 
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,24 +13,24 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://gravenimage.github.io/">A simple journal </a></h1>
+                <h1><a href="/">A simple journal </a></h1>
                 <nav><ul>
-                    <li><a href="http://gravenimage.github.io/category/misc.html">misc</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://gravenimage.github.io/elemental-words.html">Elemental words</a></h1>
+                    <h1 class="entry-title"><a href="/elemental-words.html">Elemental words</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2015-08-25T00:00:00+01:00">
                 Published: Tue 25 August 2015
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="http://gravenimage.github.io/author/gravenimage.html">gravenimage</a>
+                By                         <a class="url fn" href="/author/gravenimage.html">gravenimage</a>
         </address>
-<p>In <a href="http://gravenimage.github.io/category/misc.html">misc</a>.</p>
+<p>In <a href="/category/misc.html">misc</a>.</p>
 
 </footer><!-- /.post-info --><p>Gearing up to a pub quiz tomorrow night, my friends and I started to
 have a facebook conversation only using words that could be made from
@@ -47,10 +48,10 @@ that without more work than I can squeeze in (i.e. not capable of),
 I'm not going to do better than Python's set union and intersection
 methods.  Ditto for generating the permutations.</p>
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">itertools</span>
-<span class="c">#</span>
+
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;/usr/share/dict/words&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()]</span>
-<span class="c">#</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()]</span>
+
 <span class="n">elements</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s">&#39;uuq&#39;</span><span class="p">,</span> <span class="s">&#39;ge&#39;</span><span class="p">,</span> <span class="s">&#39;gd&#39;</span><span class="p">,</span> <span class="s">&#39;ga&#39;</span><span class="p">,</span> <span class="s">&#39;la&#39;</span><span class="p">,</span> <span class="s">&#39;li&#39;</span><span class="p">,</span> <span class="s">&#39;tl&#39;</span><span class="p">,</span> <span class="s">&#39;tm&#39;</span><span class="p">,</span> <span class="s">&#39;lr&#39;</span><span class="p">,</span> <span class="s">&#39;th&#39;</span><span class="p">,</span> <span class="s">&#39;ti&#39;</span><span class="p">,</span> \
                        <span class="s">&#39;te&#39;</span><span class="p">,</span> <span class="s">&#39;tb&#39;</span><span class="p">,</span> <span class="s">&#39;tc&#39;</span><span class="p">,</span> <span class="s">&#39;ta&#39;</span><span class="p">,</span> <span class="s">&#39;yb&#39;</span><span class="p">,</span> <span class="s">&#39;db&#39;</span><span class="p">,</span> <span class="s">&#39;dy&#39;</span><span class="p">,</span> <span class="s">&#39;xe&#39;</span><span class="p">,</span> <span class="s">&#39;h&#39;</span><span class="p">,</span> <span class="s">&#39;p&#39;</span><span class="p">,</span> <span class="s">&#39;zn&#39;</span><span class="p">,</span> <span class="s">&#39;eu&#39;</span><span class="p">,</span> <span class="s">&#39;zr&#39;</span><span class="p">,</span> \
                        <span class="s">&#39;er&#39;</span><span class="p">,</span> <span class="s">&#39;ru&#39;</span><span class="p">,</span> <span class="s">&#39;re&#39;</span><span class="p">,</span> <span class="s">&#39;rf&#39;</span><span class="p">,</span> <span class="s">&#39;ra&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span><span class="p">,</span> <span class="s">&#39;rn&#39;</span><span class="p">,</span> <span class="s">&#39;rh&#39;</span><span class="p">,</span> <span class="s">&#39;be&#39;</span><span class="p">,</span> <span class="s">&#39;ba&#39;</span><span class="p">,</span> <span class="s">&#39;uuu&#39;</span><span class="p">,</span> <span class="s">&#39;uut&#39;</span><span class="p">,</span> \
@@ -61,14 +62,14 @@ methods.  Ditto for generating the permutations.</p>
                        <span class="s">&#39;am&#39;</span><span class="p">,</span> <span class="s">&#39;al&#39;</span><span class="p">,</span> <span class="s">&#39;as&#39;</span><span class="p">,</span> <span class="s">&#39;ar&#39;</span><span class="p">,</span> <span class="s">&#39;au&#39;</span><span class="p">,</span> <span class="s">&#39;at&#39;</span><span class="p">,</span> <span class="s">&#39;in&#39;</span><span class="p">,</span> <span class="s">&#39;ni&#39;</span><span class="p">,</span> <span class="s">&#39;no&#39;</span><span class="p">,</span> <span class="s">&#39;na&#39;</span><span class="p">,</span> <span class="s">&#39;nb&#39;</span><span class="p">,</span> <span class="s">&#39;nd&#39;</span><span class="p">,</span> <span class="s">&#39;ne&#39;</span><span class="p">,</span> \
                        <span class="s">&#39;uup&#39;</span><span class="p">,</span> <span class="s">&#39;es&#39;</span><span class="p">,</span> <span class="s">&#39;np&#39;</span><span class="p">,</span> <span class="s">&#39;fr&#39;</span><span class="p">,</span> <span class="s">&#39;sc&#39;</span><span class="p">,</span> <span class="s">&#39;fe&#39;</span><span class="p">,</span> <span class="s">&#39;fm&#39;</span><span class="p">,</span> <span class="s">&#39;i&#39;</span><span class="p">,</span> <span class="s">&#39;sr&#39;</span><span class="p">,</span> <span class="s">&#39;kr&#39;</span><span class="p">,</span> <span class="s">&#39;si&#39;</span><span class="p">,</span> <span class="s">&#39;u&#39;</span><span class="p">,</span> <span class="s">&#39;sn&#39;</span><span class="p">,</span> \
                        <span class="s">&#39;sm&#39;</span><span class="p">,</span> <span class="s">&#39;y&#39;</span><span class="p">,</span> <span class="s">&#39;sb&#39;</span><span class="p">,</span> <span class="s">&#39;sg&#39;</span><span class="p">,</span> <span class="s">&#39;se&#39;</span><span class="p">])</span>
-<span class="c">#</span>
+
 <span class="n">possibles</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
     <span class="n">combinations</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">combinations_with_replacement</span><span class="p">(</span><span class="n">elements</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
     <span class="n">possibles</span> <span class="o">=</span> <span class="n">possibles</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="s">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">combinations</span><span class="p">]))</span>
-<span class="c">#</span>
+
 <span class="n">actuals</span> <span class="o">=</span> <span class="n">possibles</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
-<span class="c">#</span>
+
 <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">actuals</span><span class="p">:</span> <span class="k">print</span> <span class="n">word</span>
 </pre></div>
 
@@ -94,7 +95,7 @@ down on the number of possibles</p>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="http://gravenimage.github.io/sphinx-autodoc-skip-member-being-ignored.html" rel="bookmark"
+                    <h1><a href="/sphinx-autodoc-skip-member-being-ignored.html" rel="bookmark"
                            title="Permalink to Sphinx autodoc-skip-member being ignored">Sphinx autodoc-skip-member being ignored</a></h1>
                 </header>
 
@@ -105,22 +106,22 @@ down on the number of possibles</p>
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="http://gravenimage.github.io/author/gravenimage.html">gravenimage</a>
+                By                         <a class="url fn" href="/author/gravenimage.html">gravenimage</a>
         </address>
-<p>In <a href="http://gravenimage.github.io/category/misc.html">misc</a>.</p>
+<p>In <a href="/category/misc.html">misc</a>.</p>
 
 </footer><!-- /.post-info -->                <p>Argh, I've just struggled for an hour to figure out why the results of
 my <code>autodoc-skip-member</code> handler in Sphinx are consistently being ignored....</p>
 <p>It's because</p>
 <p>a) you can only have <em>one</em> handler (app.connect does not chain handlers), and</p>
 <p>b) I am using the <code>napoleon</code> extension, which installs ...</p>
-                <a class="readmore" href="http://gravenimage.github.io/sphinx-autodoc-skip-member-being-ignored.html">read more</a>
+                <a class="readmore" href="/sphinx-autodoc-skip-member-being-ignored.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="http://gravenimage.github.io/acer-c720-chromebook-awesomewm-keyboard-setup.html" rel="bookmark"
+                    <h1><a href="/acer-c720-chromebook-awesomewm-keyboard-setup.html" rel="bookmark"
                            title="Permalink to Acer C720 Chromebook AwesomeWM keyboard setup">Acer C720 Chromebook AwesomeWM keyboard setup</a></h1>
                 </header>
 
@@ -131,36 +132,26 @@ my <code>autodoc-skip-member</code> handler in Sphinx are consistently being ign
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="http://gravenimage.github.io/author/gravenimage.html">gravenimage</a>
+                By                         <a class="url fn" href="/author/gravenimage.html">gravenimage</a>
         </address>
-<p>In <a href="http://gravenimage.github.io/category/misc.html">misc</a>.</p>
+<p>In <a href="/category/misc.html">misc</a>.</p>
 
 </footer><!-- /.post-info -->                <p>The Acer C720 is a lovely little web-browsing machine, and with
 <a href="https://github.com/dnschneid/crouton">Crouton</a> can potentially be
 useful to a geekier audience.  But with a limited screensize and a
 poor trackpad, it's sensible to go down the tiling WM route.  Crouton
 details instructions for using AwesomeWM which worked out of the ...</p>
-                <a class="readmore" href="http://gravenimage.github.io/acer-c720-chromebook-awesomewm-keyboard-setup.html">read more</a>
+                <a class="readmore" href="/acer-c720-chromebook-awesomewm-keyboard-setup.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
                 </section><!-- /#content -->
         <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
                 <div class="social">
                         <h2>social</h2>
                         <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
                         </ul>
                 </div><!-- /.social -->
         </section><!-- /#extras -->
