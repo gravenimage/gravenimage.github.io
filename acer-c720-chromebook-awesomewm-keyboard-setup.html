@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Acer C720 Chromebook AwesomeWM keyboard setup</title>
+        <link rel="stylesheet" href="http://gravenimage.github.io/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://gravenimage.github.io/">A simple journal </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="http://gravenimage.github.io/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://gravenimage.github.io/acer-c720-chromebook-awesomewm-keyboard-setup.html" rel="bookmark"
+           title="Permalink to Acer C720 Chromebook AwesomeWM keyboard setup">Acer C720 Chromebook AwesomeWM keyboard setup</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-12-21T00:00:00+00:00">
+                Published: Sun 21 December 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://gravenimage.github.io/author/gravenimage.html">gravenimage</a>
+        </address>
+<p>In <a href="http://gravenimage.github.io/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->      <p>The Acer C720 is a lovely little web-browsing machine, and with
+<a href="https://github.com/dnschneid/crouton">Crouton</a> can potentially be
+useful to a geekier audience.  But with a limited screensize and a
+poor trackpad, it's sensible to go down the tiling WM route.  Crouton
+details instructions for using AwesomeWM which worked out of the box.</p>
+<p>Almost.</p>
+<p>I've used emacs for years and have the muscle-memory to prove it.
+Specifically, I have the memory linked to a swapped control and capslock key.
+The capslock key which is now <code>mod4</code> and controls AwesomeWM shortcuts.</p>
+<p>Because this specific Chromebook (or is it all of them?) doesn't have
+the Windows key, the only available key to use for WM-commands is the
+<code>alt gr</code> key.  It's a bit un-ergonomic, but a lot less than resetting
+years of experience.  Here's the <code>.Xmodmap</code> file to do both the
+remapping of the search key to ctrl, and <code>alt gr</code> to <code>mod4</code>.  Set this
+from your <code>.xinitrc</code> or just run it in the first console you create.</p>
+<div class="highlight"><pre>clear control
+clear mod4
+clear mod1
+keycode 133 = Super_L
+keycode 108 = Super_R
+keycode 64 = Alt_L
+add control  = Control_L Control_R Super_L
+add mod4 = Hyper_L Super_R
+add mod1 = Alt_L
+</pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
