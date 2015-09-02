@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A simple journal</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2015-08-25T00:00:00+01:00</updated><entry><title>Elemental words</title><link href="/elemental-words.html" rel="alternate"></link><updated>2015-08-25T00:00:00+01:00</updated><author><name>gravenimage</name></author><id>tag:,2015-08-25:elemental-words.html</id><summary type="html">&lt;p&gt;Gearing up to a pub quiz tomorrow night, my friends and I started to
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A simple journal</title><link href="http://gravenimage.github.io/" rel="alternate"></link><link href="http://gravenimage.github.io/feeds/all.atom.xml" rel="self"></link><id>http://gravenimage.github.io/</id><updated>2015-08-25T00:00:00+01:00</updated><entry><title>Elemental words</title><link href="http://gravenimage.github.io/elemental-words.html" rel="alternate"></link><updated>2015-08-25T00:00:00+01:00</updated><author><name>gravenimage</name></author><id>tag:gravenimage.github.io,2015-08-25:elemental-words.html</id><summary type="html">&lt;p&gt;Gearing up to a pub quiz tomorrow night, my friends and I started to
 have a facebook conversation only using words that could be made from
 the symbols of the periodic table.  (Please don't comment) I spied a
 chance to ignore my wife for half-an-hour and impress her with my
@@ -53,7 +53,7 @@ down on the number of possibles&lt;/p&gt;
 &lt;p&gt;English words never contain more than N (to be determined)
    consonants in a row.  So, eliminate them too.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>Sphinx autodoc-skip-member being ignored</title><link href="/sphinx-autodoc-skip-member-being-ignored.html" rel="alternate"></link><updated>2015-07-20T00:00:00+01:00</updated><author><name>gravenimage</name></author><id>tag:,2015-07-20:sphinx-autodoc-skip-member-being-ignored.html</id><summary type="html">&lt;p&gt;Argh, I've just struggled for an hour to figure out why the results of
+&lt;/ul&gt;</summary></entry><entry><title>Sphinx autodoc-skip-member being ignored</title><link href="http://gravenimage.github.io/sphinx-autodoc-skip-member-being-ignored.html" rel="alternate"></link><updated>2015-07-20T00:00:00+01:00</updated><author><name>gravenimage</name></author><id>tag:gravenimage.github.io,2015-07-20:sphinx-autodoc-skip-member-being-ignored.html</id><summary type="html">&lt;p&gt;Argh, I've just struggled for an hour to figure out why the results of
 my &lt;code&gt;autodoc-skip-member&lt;/code&gt; handler in Sphinx are consistently being ignored....&lt;/p&gt;
 &lt;p&gt;It's because&lt;/p&gt;
 &lt;p&gt;a) you can only have &lt;em&gt;one&lt;/em&gt; handler (app.connect does not chain handlers), and&lt;/p&gt;
@@ -63,7 +63,7 @@ autodoc-skip-member handler.&lt;/p&gt;
 (e.g. &lt;code&gt;__dict__&lt;/code&gt;, &lt;code&gt;__str__&lt;/code&gt; etc).  Luckily, napoleon allows you to add
 this to your conf.py:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;napoleon_include_special_with_doc = False
-&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>Acer C720 Chromebook AwesomeWM keyboard setup</title><link href="/acer-c720-chromebook-awesomewm-keyboard-setup.html" rel="alternate"></link><updated>2014-12-21T00:00:00+00:00</updated><author><name>gravenimage</name></author><id>tag:,2014-12-21:acer-c720-chromebook-awesomewm-keyboard-setup.html</id><summary type="html">&lt;p&gt;The Acer C720 is a lovely little web-browsing machine, and with
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>Acer C720 Chromebook AwesomeWM keyboard setup</title><link href="http://gravenimage.github.io/acer-c720-chromebook-awesomewm-keyboard-setup.html" rel="alternate"></link><updated>2014-12-21T00:00:00+00:00</updated><author><name>gravenimage</name></author><id>tag:gravenimage.github.io,2014-12-21:acer-c720-chromebook-awesomewm-keyboard-setup.html</id><summary type="html">&lt;p&gt;The Acer C720 is a lovely little web-browsing machine, and with
 &lt;a href="https://github.com/dnschneid/crouton"&gt;Crouton&lt;/a&gt; can potentially be
 useful to a geekier audience.  But with a limited screensize and a
 poor trackpad, it's sensible to go down the tiling WM route.  Crouton
