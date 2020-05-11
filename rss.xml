@@ -4,26 +4,40 @@
 <title><![CDATA[gravenimage...]]></title>
 <description><![CDATA[gravenimage...]]></description>
 <link>https://gravenimage.github.io/</link>
-<lastBuildDate>Mon, 11 May 2020 21:24:05 +0200</lastBuildDate>
+<lastBuildDate>Mon, 11 May 2020 21:31:01 +0200</lastBuildDate>
 <item>
-  <title><![CDATA[Test3]]></title>
+  <title><![CDATA[First post and a plan.]]></title>
   <description><![CDATA[
 <p>
-This is test3.1
+Locked. Down.
 </p>
-<div class="taglist"></div>]]></description>
-  <link>https://gravenimage.github.io/test3.html</link>
-  <pubDate>Mon, 11 May 2020 21:24:05 +0200</pubDate>
-</item>
-<item>
-  <title><![CDATA[this is my title]]></title>
-  <description><![CDATA[
+
 <p>
-This is my content. <b>hello</b>!
+With 2 young children, there's not much change.  But after 7 (???)
+weeks, it <b><b>is</b></b> beginning to feel a little constricting.  And working
+from home, I'm finding it more important than ever to get more
+organised, in work and in home life. 
+</p>
+
+<p>
+So, as a little experiment, I'm moving a lot of my life into org-mode,
+and this is the outcome.  A blog might seem old-fashioned, but it
+feels a little less self-indulgent than a snarky twitter feed or a
+look-at-me Facebook post.  And as for Instagram etc - kids these days.
+</p>
+
+<p>
+Harumph.
+</p>
+
+<p>
+So, I'll try and blog something every 2 days.  It might be nothing, it
+might be about programming, it might be about life in Norway (which
+I'm slowly acclimatizing to).  We'll see.  No promises.
 </p>
 <div class="taglist"></div>]]></description>
-  <link>https://gravenimage.github.io/test2.html</link>
-  <pubDate>Mon, 11 May 2020 21:24:05 +0200</pubDate>
+  <link>https://gravenimage.github.io/first-post-and-a-plan.html</link>
+  <pubDate>Mon, 11 May 2020 21:31:01 +0200</pubDate>
 </item>
 </channel>
 </rss>
